@@ -5,7 +5,7 @@ const conectinstance = new conect();
 
 conectinstance.conexion(false).then(connection => {
     const funtionInstance = new funcion();
-    funtionInstance.nombre();
+    funtionInstance.peticion();
     
 }).catch(error => console.log("error conexion",error));
 
