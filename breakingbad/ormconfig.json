@@ -1,0 +1,16 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "terrster",
+    "password": "Plastic_2010",
+    "database": "bbq",
+    "logging": true,
+    "entities": [
+        "dist/database/entitys/**/*.js"
+     ],
+    "migrations": ["dist/database/migration/**/*.js"],
+    "cli": {
+        "migrationsDir": "src/database/migration"
+    }
+}
