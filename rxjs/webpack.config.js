@@ -31,7 +31,8 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     plugins: [new HtmlWebpackPlugin({
-        template: 'index.html'
+        template: path.join(__dirname, "./index.html"),
+        filename: 'index.html'
     })],
 
     devServer: {

@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 *,
 html,
 body {
   font-family: "Roboto", sans-serif;
-
+  
   color: white;
 }
+
 
 body {
   text-align: center !important;
@@ -96,6 +97,10 @@ ol {
   animation-name: fadeIn;
 }
 
+.number{
+  font-size: 5rem;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -117,6 +122,119 @@ ol {
 }
 
 .fadeIn {
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;
+  
+  animation: fadeIn .5s ease-in-out;
+}
+
+.cards {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  list-style-type: none;
+}
+
+
+.card_header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 0em;
+  /* background-image: linear-gradient(120deg,  #343A4F, #0F1620) ; */
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.card_title {
+  font-size: 1em;
+  /* margin: 0 0 .3em; */
+  margin-bottom: 0;
+  color: #ffffff;
+  background-image:  linear-gradient(176deg, #3D9DEA, #4A4EEE);
+  z-index: 1;
+  border-radius: 0 1em;
+
+}
+
+/* .card_header::before{
+  content: "";
+  background-image:  linear-gradient(176deg, #3D9DEA, #4A4EEE);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 48%;
+  z-index: 0;
+} */
+
+.card_description {
+  margin: 0 0 .5em 0;
+  color: #D7BDCA; 
+  overflow: hidden;
+}
+
+select{
+  display: inline-block;
+  width: 10%;
+  cursor: pointer;
+  padding: .5em;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: #3D9DEA;
+  color: #ffffff;
+  margin: 1em;
+  border-radius: 1em;
+  text-align: center;
+  position: relative;
+}
+
+select:hover{
+  background-color: #efb810;
+}
+
+.bn31 {
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border-radius: 40px;
+  color: #00a84f;
+  font-size: 1.4em;
+  padding: 4px;  
+}
+
+.bn31:hover {
+  color: #fff;
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+}
+
+img {
+	/* -webkit-transform: scale(1);
+	transform: scale(1); */
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+img:hover {
+	
+  box-shadow: rgb(139, 255, 72) 0px 8px 24px;
 }
